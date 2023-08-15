@@ -1,7 +1,19 @@
+html,
+body {
+  height: 100%;
+
+}
+
 body {
   @extend %dmsans-400;
   font-size: 16px;
   color: $black;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
@@ -12,4 +24,8 @@ body {
 a {
   color: $main;
   text-decoration: none;
+}
+
+.none {
+  display: none;
 }
