@@ -261,3 +261,33 @@
 li.slick-active {
   opacity: 1;
 }
+
+.benefits {
+  background-color: $cream-soft;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    display: flex;
+    padding: 45px 150px;
+  }
+
+  &__img {
+    margin-right: 25px;
+  }
+
+  &__title {
+    font-size: 18px;
+    @extend %dmsans-700;
+    color: #414141;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+}
+
+.benefits__item+.benefits__item {
+  border-left: 1px solid #e8e4df;
+}
