@@ -5,8 +5,9 @@ body {
 }
 
 body {
-  @extend %dmsans-400;
   font-size: 16px;
+  font-family: 'DMSans';
+  font-weight: 400;
   color: $black;
   display: flex;
   flex-direction: column;
@@ -28,4 +29,12 @@ a {
 
 .none {
   display: none;
+}
+
+.title {
+  font-size: 36px;
+  font-family: 'DMSans';
+  font-weight: 700;
+  color: $title;
+  text-align: center;
 }
