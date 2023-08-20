@@ -283,11 +283,14 @@ li.slick-active {
 
   &__item {
     display: flex;
-    padding: 45px 150px;
+    padding: 45px 100px;
+    align-items: center;
   }
 
   &__img {
     margin-right: 25px;
+    width: 50px;
+    height: 30px;
   }
 
   &__title {

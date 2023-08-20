@@ -9,7 +9,7 @@ const clean = require('gulp-clean');
 const imagemin = require('gulp-imagemin');
 
 function styles() {
-  return src('app/scss/*.scss')
+  return src('app/scss/style.scss')
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
     .pipe(concat('style.min.css'))
     .pipe(scss({ outputStyle: 'compressed' }))
@@ -30,7 +30,7 @@ function scripts() {
 }
 
 function watching() {
-  watch(['app/scss/*.scss'], styles)
+  watch(['app/scss/style.scss'], styles)
   watch(['app/js/main.js'], scripts)
   watch(['app/*.html']).on('change', browserSync.reload)
 }
@@ -62,7 +62,7 @@ function building() {
   return src([
     'app/css/style.min.css',
     'app/js/main.min.js',
-    'app/**/*.html'
+    'app/*.html'
   ], { base: 'app' })
     .pipe(dest('dist'))
 }
