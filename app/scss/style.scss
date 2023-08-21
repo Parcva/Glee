@@ -4,6 +4,8 @@
 @import './global';
 
 @import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+
 
 
 .header {
@@ -315,6 +317,7 @@ li.slick-active {
 
   &__title {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__filter {
@@ -488,6 +491,7 @@ li.slick-active {
 
   &__title {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__filter {
@@ -538,4 +542,131 @@ li.slick-active {
 
 .mixitup-control-active {
   color: $title;
+}
+
+.video {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  &__play {
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.about {
+
+  margin-bottom: -210px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: #262626;
+    padding-right: 25px;
+    margin-right: 25px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 12px;
+      right: 0;
+      top: 4px;
+      background-image: url('../img/about/arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 420px;
+
+  }
+
+  &__item {
+    position: relative;
+    background-color: $white;
+  }
+
+  &__img {
+    max-height: 210px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__news {
+    position: absolute;
+    background-color: #a3bbc8;
+    padding: 10px 31px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $white;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__wrapper {
+    padding: 36px 30px 26px 30px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #262626;
+    margin-bottom: 18px;
+  }
+
+  &__inner {
+    display: flex;
+    padding-top: 20px;
+    font-size: 12px;
+    font-family: 'Rubik';
+    color: #222933;
+    text-transform: uppercase;
+  }
+
+  &__data {
+    margin-right: 30px;
+  }
+
+}
+
+.partners {
+  background-color: $cream-soft;
+  padding: 265px 0px 90px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 }

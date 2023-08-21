@@ -8,8 +8,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.3",
-    "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -22,5 +22,8 @@
     "sass": "^1.65.1",
     "slick-carousel": "^1.8.1"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.22"
+  }
 }
