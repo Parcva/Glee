@@ -809,3 +809,28 @@ li.slick-active {
     }
   }
 }
+
+.rules {
+  padding: 120px 0px;
+  font-family: 'Rubik';
+  color: #243f4d;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &__lists {
+    margin-left: 20px;
+  }
+
+  &__list {
+    margin-top: 33px;
+    padding-left: 13px;
+  }
+
+  &__inner {
+    margin-top: 70px;
+  }
+}
