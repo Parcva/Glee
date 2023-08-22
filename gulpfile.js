@@ -31,7 +31,7 @@ function scripts() {
 }
 
 function watching() {
-  watch(['app/scss/style.scss'], styles)
+  watch(['app/scss/*.scss'], styles)
   watch(['app/js/main.js'], scripts)
   watch(['app/*.html']).on('change', browserSync.reload)
 }

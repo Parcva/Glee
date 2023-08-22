@@ -82,6 +82,50 @@
   }
 }
 
+.top {
+  padding: 35px 0px;
+  background-color: #edf1f4;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    color: #222933;
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumbs {
+  &__lists {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    margin-right: 5px;
+
+    &::after {
+      content: "/";
+      color: $footer;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    color: $footer;
+    font-family: 'Rubik';
+  }
+}
+
 .footer {
   &__top {
     font-size: 14px;
