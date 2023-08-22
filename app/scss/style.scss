@@ -834,3 +834,76 @@ li.slick-active {
     margin-top: 70px;
   }
 }
+
+.mission {
+  padding: 120px 0px;
+  font-family: 'Rubik';
+  color: #243f4d;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__inner {
+    margin-left: 30px;
+    padding-top: 85px;
+    max-width: 550px;
+  }
+
+  &__years {
+    display: flex;
+    width: 210px;
+    margin-bottom: 20px;
+  }
+
+  &__years-number {
+    font-size: 140px;
+    font-weight: 700;
+    color: #a3bbc8;
+  }
+
+  &__years-text {
+    margin-top: 40px;
+    margin-left: 30px;
+    line-height: 30px;
+  }
+
+  &__title {
+    color: #243f4d;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e6eaf1;
+  }
+
+  &__benefits {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-inner {
+    margin-left: 20px;
+  }
+
+  &__item-number {
+    color: #243f4d;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4c4c4c;
+  }
+}
+
+.mission__item+.mission__item {
+  padding-left: 30px;
+  border-left: 1px solid #e6eaf1;
+}

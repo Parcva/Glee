@@ -9,6 +9,8 @@ $accent: #234969;
 $footer-title: #1f2044;
 $title: #191919;
 
+
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
