@@ -416,7 +416,6 @@ li.slick-active {
   &__item-title {
     font-family: 'DMSans';
     font-weight: 500;
-    color: #243f4d;
     margin-bottom: 15px;
   }
 
@@ -585,7 +584,7 @@ li.slick-active {
 }
 
 .mixitup-control-active {
-  color: $title;
+  color: $black;
 }
 
 .video {
@@ -797,7 +796,7 @@ li.slick-active {
     padding: 23px 0px;
     font-weight: 500;
     font-family: 'Rubik';
-    color: #243f4d;
+    color: $black;
     border: 1px solid #a3bbc8;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -878,7 +877,7 @@ li.slick-active {
     border-bottom: 1px solid #e6eaf1;
   }
 
-  &__benefits {
+  &__achievement {
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
@@ -906,4 +905,112 @@ li.slick-active {
 .mission__item+.mission__item {
   padding-left: 30px;
   border-left: 1px solid #e6eaf1;
+}
+
+.widgets {
+  padding: 95px 0px 85px;
+  background-color: $cream;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: end;
+  }
+
+  &__img-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__number {
+    margin: 20px 0px 27px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #243f4d;
+    font-weight: 700;
+  }
+}
+
+.team {
+  padding: 120px 0px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+  }
+
+  &__inner {
+    max-width: 300px;
+  }
+
+  &__text {
+    line-height: 30px;
+    margin: 40px 0px;
+  }
+
+  &__link {
+    padding: 19px;
+    background-color: #a3bbc8;
+    color: $white;
+    font-size: 15px;
+    font-family: 'Rubik';
+    display: flex;
+    align-items: center;
+    width: 170px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #214454;
+    }
+  }
+
+  &__link-arrow {
+    margin-left: 20px;
+  }
+
+
+  &__info {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 325px;
+    padding: 30px 25px;
+    margin-top: -60px;
+    background-color: $white;
+    box-shadow: 0 6px 57px rgba(37, 37, 37, 0.05);
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #436372;
+    line-height: 26px;
+  }
+
+  &__status {
+    color: #565872;
+    font-family: 'Rubik';
+  }
+
 }
