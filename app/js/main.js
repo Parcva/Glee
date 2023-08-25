@@ -7,6 +7,13 @@ $(function () {
     readOnly: true
   });
 
+  $(".shop-item__star").rateYo({
+    starWidth: "18px",
+    ratedFill: "#ffcc00",
+    normalFill: "#d7d7d7",
+    readOnly: true
+  });
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     onStart: function (data) {
