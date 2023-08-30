@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+<defs>
+<clipPath id="pvaua">
+<path fill="#fff" d="M45 40h40a5 5 0 0 1 5 5v40a5 5 0 0 1-5 5H45a5 5 0 0 1-5-5V45a5 5 0 0 1 5-5z"/></clipPath></defs><g><g><path fill="none" stroke="#a3bbc8" stroke-miterlimit="20" stroke-width="4" d="M45 40h40a5 5 0 0 1 5 5v40a5 5 0 0 1-5 5H45a5 5 0 0 1-5-5V45a5 5 0 0 1 5-5z" clip-path="url(&quot;#pvaua&quot;)"/></g><g><path fill="#a3bbc8" d="M54.296 66.473l-.008-.002h16.956l-.1 2.858a.29.29 0 0 0 0 .41l.172.173a.285.285 0 0 0 .204.084c.077 0 .15-.03.204-.083l4.192-4.212a.288.288 0 0 0 0-.408l-4.192-4.213a.288.288 0 0 0-.204-.083c-.077 0-.15.03-.204.083l-.172.174a.285.285 0 0 0 0 .403l.113 2.865H54.292a.3.3 0 0 0-.292.296v1.37c0 .159.137.285.296.285z"/></g></g></svg>
