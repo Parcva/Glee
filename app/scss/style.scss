@@ -1537,34 +1537,10 @@ li.slick-active {
     margin-bottom: 10px;
   }
 
-  &__description-inner {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  &__description-btn {
-    background-color: #edf1f4;
-    width: 240px;
-    padding: 20px 0px;
-    font-size: 18px;
-    font-family: 'Rubik';
-    font-weight: 500;
-    color: #243f4d;
-    border-radius: 7px;
-
-    &.product-one__description-btn--active {
-      background-color: #a3bbc8;
-    }
-  }
-
-  &__description-text {
-    line-height: 30px;
-  }
 }
 
-.product-one__description-btn+.product-one__description-btn {
-  margin-left: 15px;
-}
+
+
 
 .product-slider {
   width: 50%;
@@ -1697,6 +1673,46 @@ li.slick-active {
   position: relative;
   vertical-align: middle;
   padding: 0 50px;
+}
+
+
+.product-tabs {
+  font-family: 'Rubik';
+  line-height: 30px;
+
+  &__top {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__top-item {
+    display: block;
+    width: 240px;
+    text-align: center;
+    padding: 18px 0px;
+    background-color: #edf1f4;
+    border-radius: 7px;
+    color: #243f4d;
+    font-size: 18px;
+
+    &+.product-tabs__top-item {
+      margin-left: 13px;
+    }
+  }
+
+  &__top-item--active {
+    background-color: #a3bbc8;
+    color: $white;
+  }
+
+  &__content-item {
+    display: none;
+
+    &.product-tabs__content-item--active {
+      display: block;
+    }
+  }
 }
 
 
