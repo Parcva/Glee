@@ -1405,19 +1405,6 @@ li.slick-active {
   .shop-iten__choice-link--fallow {
     display: none;
   }
-
-  .pagination {
-    justify-content: start;
-  }
-
-
-  .pagination__list:first-child {
-    margin-left: 0px;
-  }
-
-  .pagination__roster {
-    margin-left: 0px;
-  }
 }
 
 .pagination {
@@ -1427,6 +1414,19 @@ li.slick-active {
   align-items: center;
   color: #243f4d;
   font-family: 'Rubik';
+
+  &.pagination--left {
+
+    justify-content: start;
+
+    .pagination__list:first-child {
+      margin-left: 0px;
+    }
+
+    .pagination__roster {
+      margin-left: 0px;
+    }
+  }
 
   &__roster {
     display: flex;
@@ -1752,4 +1752,209 @@ li.slick-active {
 
 .slick-slider {
   position: static;
+}
+
+.blog {
+  font-family: 'Rubik';
+  padding: 120px 0px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    margin-right: 70px;
+  }
+
+  &__aside {
+    min-width: 270px;
+
+  }
+}
+
+.blog-item {
+  margin-bottom: 40px;
+
+  &__box-img {
+    min-width: 830px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  &__img {
+    width: 830px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__box-inner {
+    display: flex;
+    width: 275px;
+    padding: 29px 22px;
+    background-color: #a3bbc8;
+    color: $white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__data {
+    margin-right: 24px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 13px;
+      width: 11px;
+      background-image: url('../img/blog/calendar.svg');
+    }
+  }
+
+  &__name {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 13px;
+      width: 11px;
+      background-image: url('../img/blog/user.svg');
+    }
+  }
+
+
+  &__title {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    color: #a3bbc8;
+    display: block;
+    font-size: 15px;
+    width: 180px;
+    padding: 20px 60px 20px 20px;
+    border: 1px solid #a3bbc8;
+    position: relative;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #214454;
+      border: #214454;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 9px;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../img/blog/arrows.svg');
+    }
+  }
+}
+
+.filter-serch {
+  margin-bottom: 60px;
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    border: 1px solid #edf1f4;
+    width: 220px;
+    border-radius: 5px;
+    height: 43px;
+    padding: 0px 15px;
+    border-right: none;
+  }
+
+  &__btn {
+    height: 43px;
+    width: 43px;
+    background-color: #edf1f4;
+    margin-left: -3px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('../img/blog/serch.svg');
+    }
+  }
+}
+
+.recent-post {
+
+  &__img {
+    display: inline-block;
+    width: 71px;
+    height: 68px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  &__box-title {
+    font-size: 14px;
+    display: block;
+    color: #333333;
+    line-height: 20px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: #a2bac7;
+    }
+  }
+
+
+  &__data {
+    padding-left: 20px;
+    position: relative;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 13px;
+      width: 11px;
+      background-image: url('../img/blog/calendar-recent-post.svg');
+    }
+  }
 }
