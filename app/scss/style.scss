@@ -2278,3 +2278,97 @@ li.slick-active {
   }
 
 }
+
+.contact {
+  padding: 120px 0px;
+  font-family: 'Rubik';
+
+  &__subtitle {
+    color: #a3bbc8;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 120px;
+  }
+
+  &__info-item {
+    padding: 70px 58px;
+    background-color: #fbfbfb;
+    height: 380px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      border: 2px solid #a3bbc8;
+
+      .contact__info-img {
+        background-color: #a3bbc8;
+
+        path {
+          fill: #ffff;
+        }
+      }
+
+    }
+  }
+
+  &__info-img {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #ffff;
+    border-radius: 15px;
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in;
+  }
+
+  &__info-name {
+    font-weight: 700;
+    font-weight: 20px;
+    margin-bottom: 28px;
+    color: #222222;
+  }
+
+  &__info-text {
+    color: #565872;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 650px;
+  }
+
+  &__input,
+  &__textarea {
+    text-transform: uppercase;
+    background-position: 270px;
+  }
+
+  &__textarea {
+    background-position: 607px 20px;
+    height: 185px;
+  }
+
+
+}
