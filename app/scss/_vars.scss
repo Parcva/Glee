@@ -7,13 +7,3 @@ $white: #ffff;
 $footer: #7b7b7b;
 $accent: #234969;
 $footer-title: #1f2044;
-
-
-
-@function max($numbers...) {
-  @return m#{a}x(#{$numbers});
-}
-
-@function min($numbers...) {
-  @return m#{i}n(#{$numbers});
-}

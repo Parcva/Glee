@@ -1,0 +1,15 @@
+.partners {
+  background-color: $cream-soft;
+  padding: 265px 0px 90px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.partners--min {
+  padding: 90px 0px;
+}

@@ -1,0 +1,25 @@
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+
+.video {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  &__play {
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

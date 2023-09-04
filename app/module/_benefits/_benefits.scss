@@ -1,0 +1,33 @@
+.benefits {
+  background-color: $cream-soft;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    display: flex;
+    padding: 45px 80px;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 25px;
+    width: 50px;
+    height: 30px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-family: 'DMSans';
+    font-weight: 700;
+    color: #414141;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+}
+
+.benefits__item+.benefits__item {
+  border-left: 1px solid #e8e4df;
+}

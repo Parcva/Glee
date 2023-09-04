@@ -1,0 +1,57 @@
+.desing {
+  padding: 110px 0px;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 75px;
+  }
+
+  &__btn {
+    font-family: 'DMSans';
+    font-weight: 700;
+    color: #8b8b8b;
+    transition: all .2s;
+  }
+
+  &__album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+
+  &__item {
+    width: 370px;
+    height: 250px;
+    padding: 35px 0px 165px 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &__inner {
+    max-width: 170px;
+  }
+
+  &__item-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+  }
+
+  &__class {
+    color: #a3bbc8;
+    font-weight: 700;
+  }
+}
+
+.mixitup-control-active {
+  color: $black;
+}

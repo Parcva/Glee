@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gree</title>
+  <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+<body>
+
+
+
+ {% include 'app/module/_header/_header.html'%}
+
+  <main class="main">
+
+{% include 'app/module/_top/_top.html'%}
+
+    <section class="login">
+      <form class="login__form" action="#">
+        <label class="login__label">
+          Username or email address *
+          <input class="login__input" type="text">
+        </label>
+        <label class="login__label">
+          Password *
+          <input class="login__input" type="password">
+        </label>
+        <button class="login__btn" type="submit">Login</button>
+        <div class="login__inner">
+          <label class="login__label">
+            <input class="login__input-checkbox" type="checkbox">
+            Remember me
+          </label>
+          <a class="login__error" href="#">Lost your password?</a>
+        </div>
+        <a class="login__registered" href="#">Not registered? No problem</a>
+        <a class="login__link" type="submit">Create an account</a>
+      </form>
+    </section>
+
+   {% include 'app/module/_partners-min/_partners-min.html'%}
+
+  </main>
+
+  {% include 'app/module/_footer/_footer.html'%}
+
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
