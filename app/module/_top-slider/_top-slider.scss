@@ -78,3 +78,54 @@
 li.slick-active {
   opacity: 1;
 }
+
+@media (max-width: 880px) {
+  .top-slider {
+    &__title {
+      font-size: 55px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .top-slider {
+    padding: 60px 0px;
+
+    &__inner {
+      margin-right: 10px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      width: 260px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .top-slider {
+    &__inner {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      .top-slider__img {
+        display: none;
+      }
+    }
+
+    &__text {
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

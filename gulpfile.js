@@ -18,12 +18,18 @@ function nunjucks() {
 }
 
 function styles() {
-  return src('app/scss/*.scss')
-    .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version'] }))
+  return src([
+    'app/scss/*.scss',
+    'app/modules/**/*.scss',
+  ])
+    .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(scss({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 10 version'],
+      grid: true
+    }))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
@@ -45,10 +51,7 @@ function scripts() {
 }
 
 function watching() {
-  watch([
-    'app/scss/*.scss',
-    'app/**/*.scss'
-  ], styles);
+  watch(['app/**/*.scss'], styles);
   watch(['app/js/main.js'], scripts);
   watch(['app/*.njk'], nunjucks);
   watch(['app/*.html']).on('change', browserSync.reload);
@@ -73,8 +76,10 @@ function browsersync() {
   browserSync.init({
     server: {
       baseDir: "app/"
-    }
+    },
+    notify: false
   });
+
 }
 
 function building() {

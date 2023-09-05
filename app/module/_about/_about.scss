@@ -33,7 +33,6 @@
     justify-content: space-between;
     gap: 30px;
     height: 420px;
-
   }
 
   &__item {
@@ -86,4 +85,48 @@
     margin-right: 30px;
   }
 
+}
+
+@media (max-width: 960px) {
+  .about {
+
+    &__items {
+      height: 370px;
+    }
+
+    &__news {
+      top: 30px;
+      left: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    &__inner {
+      padding-top: 0px;
+      display: block;
+    }
+
+    &__data {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__admin {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    display: none;
+  }
 }

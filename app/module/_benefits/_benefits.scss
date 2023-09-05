@@ -31,3 +31,30 @@
 .benefits__item+.benefits__item {
   border-left: 1px solid #e8e4df;
 }
+
+@media (max-width: 1100px) {
+  .benefits {
+    &__item {
+      padding: 40px 40px;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .benefits {
+    &__item {
+      padding: 20px 20px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .benefits {
+    display: block;
+  }
+
+  .benefits__item+.benefits__item {
+    border-left: none;
+    border-top: 1px solid #e8e4df;
+  }
+}

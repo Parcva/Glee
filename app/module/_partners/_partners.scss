@@ -13,3 +13,27 @@
 .partners--min {
   padding: 90px 0px;
 }
+
+
+@media (max-width: 760px) {
+  .partners {
+    padding: 0px 0px !important;
+
+    &__inner {
+      padding: 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__img {
+      margin: 20px 15px;
+    }
+  }
+}
+
+
+@media (max-width: 640px) {
+  .partners {
+    padding: 40px 0px;
+  }
+}

@@ -23,3 +23,18 @@
     }
   }
 }
+
+
+@media (max-width: 900px) {
+  .video {
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video {
+    height: 200px;
+  }
+}
