@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gree</title>
   <link rel="stylesheet" href="css/shop.min.css">
+  <link rel="stylesheet" href="csss/style.min.css">
 </head>
 
 <body>
-
-
 
  {% include 'app/module/_header/_header.html'%}
  
@@ -20,136 +19,142 @@
 
     <section class="shop">
       <div class="container">
+         <h2 class='shop__title title'>Product</h2>   
         <div class="shop__wrapper">
-          <div class="filter">
-            <div class="filter__item filter-category">
-              <h4 class="filter__title">CATEGORY</h4>
-              <form class="filter-category__form" action="#">
-                <label class="filter-category__label">
-                  <input class="filter-category__input filter__hidden" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Chair</span>
-                    <img src="./img/shop/arrow.svg" alt="arrow">
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input filter__hidden" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Tabler</span>
-                    <img src="./img/shop/arrow.svg" alt="arrow">
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input filter__hidden" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Lamp</span>
-                    <img src="./img/shop/arrow.svg" alt="arrow">
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input filter__hidden" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Watch</span>
-                    <img src="./img/shop/arrow.svg" alt="arrow">
-                  </div>
-                </label>
-                <label class="filter-category__label">
-                  <input class="filter-category__input filter__hidden" type="checkbox">
-                  <div class="filter-category__checkbox">
-                    <span>Clock</span>
-                    <img src="./img/shop/arrow.svg" alt="arrow">
-                  </div>
-                </label>
-              </form>
-            </div>
-            <div class="filter__item filter-price">
-              <h4 class="filter__title">PRICE</h4>
-              <form class="filter-price__form" action="#">
-                <label class="filter-price__label">
-                  <input class="filter-price__input filter__hidden" type="text" data-min="0" data-max="1000"
-                    data-from="100" data-to="500">
-                  <div class="filter-price__checkbox">
-                    $<span class="filter-price__from"></span>
-                    $<span class="filter-price__to"></span>
-                  </div>
-                </label>
-              </form>
-            </div>
-            <div class="filter__item filter-brand">
-              <h3 class="filter__title">BRAND</h3>
-              <form class="filter-brand__form" action="#">
-                <label class="filter-brand__label">
-                  <input class="filter-brand__input filter__hidden" type="checkbox">
-                  <div class="filter-brand__checkbox">
-                    <span>RFL</span>
-                    <span>(10)</span>
-                  </div>
-                </label>
-                <label class="filter-brand__label">
-                  <input class="filter-brand__input filter__hidden" type="checkbox">
-                  <div class="filter-brand__checkbox">
-                    <span>Brothers</span>
-                    <span>(21)</span>
-                  </div>
-                </label>
-                <label class="filter-brand__label">
-                  <input class="filter-brand__input filter__hidden" type="checkbox">
-                  <div class="filter-brand__checkbox">
-                    <span>Regal</span>
-                    <span>(3)</span>
-                  </div>
-                </label>
-                <label class="filter-brand__label">
-                  <input class="filter-brand__input filter__hidden" type="checkbox">
-                  <div class="filter-brand__checkbox">
-                    <span>Nadia</span>
-                    <span>(14)</span>
-                  </div>
-                </label>
-                <label class="filter-brand__label">
-                  <input class="filter-brand__input filter__hidden" type="checkbox">
-                  <div class="filter-brand__checkbox">
-                    <span>Otobi</span>
-                    <span>(6)</span>
-                  </div>
-                </label>
-              </form>
-            </div>
-            <div class="filter__item filter-recent">
-              <h3 class="filter__title">RECENT PRODUCTS</h3>
-              <div class="filter-recent__item">
-                <div class="filter-recent__img-box">
-                  <img class="filter-recent__img" src="./img/shop/recent1.png" alt="product">
+          <div class="filter"> 
+            <button class='filter__btn'>
+              <span></span>
+            </button>
+            <div class='filter__wrapper'>
+                <div class="filter__item filter-category">
+                  <h4 class="filter__title">CATEGORY</h4>
+                  <form class="filter-category__form" action="#">
+                    <label class="filter-category__label">
+                      <input class="filter-category__input filter__hidden" type="checkbox">
+                      <div class="filter-category__checkbox">
+                        <span>Chair</span>
+                        <img src="./img/shop/arrow.svg" alt="arrow">
+                      </div>
+                    </label>
+                    <label class="filter-category__label">
+                      <input class="filter-category__input filter__hidden" type="checkbox">
+                      <div class="filter-category__checkbox">
+                        <span>Tabler</span>
+                        <img src="./img/shop/arrow.svg" alt="arrow">
+                      </div>
+                    </label>
+                    <label class="filter-category__label">
+                      <input class="filter-category__input filter__hidden" type="checkbox">
+                      <div class="filter-category__checkbox">
+                        <span>Lamp</span>
+                        <img src="./img/shop/arrow.svg" alt="arrow">
+                      </div>
+                    </label>
+                    <label class="filter-category__label">
+                      <input class="filter-category__input filter__hidden" type="checkbox">
+                      <div class="filter-category__checkbox">
+                        <span>Watch</span>
+                        <img src="./img/shop/arrow.svg" alt="arrow">
+                      </div>
+                    </label>
+                    <label class="filter-category__label">
+                      <input class="filter-category__input filter__hidden" type="checkbox">
+                      <div class="filter-category__checkbox">
+                        <span>Clock</span>
+                        <img src="./img/shop/arrow.svg" alt="arrow">
+                      </div>
+                    </label>
+                  </form>
                 </div>
-                <div class="filter-recent__inner">
-                  <a class="filter-recent__name" href="#">Pendant lamp</a>
-                  <div class="star" data-rateyo-rating="5"></div>
-                  <span class="filter-recent__price">23$</span>
+                <div class="filter__item filter-price">
+                  <h4 class="filter__title">PRICE</h4>
+                  <form class="filter-price__form" action="#">
+                    <label class="filter-price__label">
+                      <input class="filter-price__input filter__hidden" type="text" data-min="0" data-max="1000"
+                        data-from="100" data-to="500">
+                      <div class="filter-price__checkbox">
+                        $<span class="filter-price__from"></span>
+                        $<span class="filter-price__to"></span>
+                      </div>
+                    </label>
+                  </form>
                 </div>
-              </div>
-              <div class="filter-recent__item">
-                <div class="filter-recent__img-box">
-                  <img class="filter-recent__img" src="./img/shop/recent2.png" alt="product">
+                <div class="filter__item filter-brand">
+                  <h3 class="filter__title">BRAND</h3>
+                  <form class="filter-brand__form" action="#">
+                    <label class="filter-brand__label">
+                      <input class="filter-brand__input filter__hidden" type="checkbox">
+                      <div class="filter-brand__checkbox">
+                        <span>RFL</span>
+                        <span>(10)</span>
+                      </div>
+                    </label>
+                    <label class="filter-brand__label">
+                      <input class="filter-brand__input filter__hidden" type="checkbox">
+                      <div class="filter-brand__checkbox">
+                        <span>Brothers</span>
+                        <span>(21)</span>
+                      </div>
+                    </label>
+                    <label class="filter-brand__label">
+                      <input class="filter-brand__input filter__hidden" type="checkbox">
+                      <div class="filter-brand__checkbox">
+                        <span>Regal</span>
+                        <span>(3)</span>
+                      </div>
+                    </label>
+                    <label class="filter-brand__label">
+                      <input class="filter-brand__input filter__hidden" type="checkbox">
+                      <div class="filter-brand__checkbox">
+                        <span>Nadia</span>
+                        <span>(14)</span>
+                      </div>
+                    </label>
+                    <label class="filter-brand__label">
+                      <input class="filter-brand__input filter__hidden" type="checkbox">
+                      <div class="filter-brand__checkbox">
+                        <span>Otobi</span>
+                        <span>(6)</span>
+                      </div>
+                    </label>
+                  </form>
                 </div>
-                <div class="filter-recent__inner">
-                  <a class="filter-recent__name" href="#">Pendant lamp</a>
-                  <div class="star" data-rateyo-rating="5"></div>
-                  <span class="filter-recent__price">23$</span>
+                <div class="filter__item filter-recent">
+                  <h3 class="filter__title">RECENT PRODUCTS</h3>
+                  <div class="filter-recent__item">
+                    <div class="filter-recent__img-box">
+                      <img class="filter-recent__img" src="./img/shop/recent1.png" alt="product">
+                    </div>
+                    <div class="filter-recent__inner">
+                      <a class="filter-recent__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="filter-recent__price">23$</span>
+                    </div>
+                  </div>
+                  <div class="filter-recent__item">
+                    <div class="filter-recent__img-box">
+                      <img class="filter-recent__img" src="./img/shop/recent2.png" alt="product">
+                    </div>
+                    <div class="filter-recent__inner">
+                      <a class="filter-recent__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="filter-recent__price">23$</span>
+                    </div>
+                  </div>
+                  <div class="filter-recent__item">
+                    <div class="filter-recent__img-box">
+                      <img class="filter-recent__img" src="./img/shop/recent3.png" alt="product">
+                    </div>
+                    <div class="filter-recent__inner">
+                      <a class="filter-recent__name" href="#">Pendant lamp</a>
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="filter-recent__price">23$</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="filter-recent__item">
-                <div class="filter-recent__img-box">
-                  <img class="filter-recent__img" src="./img/shop/recent3.png" alt="product">
-                </div>
-                <div class="filter-recent__inner">
-                  <a class="filter-recent__name" href="#">Pendant lamp</a>
-                  <div class="star" data-rateyo-rating="5"></div>
-                  <span class="filter-recent__price">23$</span>
-                </div>
-              </div>
-            </div>
+            </div>   
           </div>
-          <div class="shop__content-wrapper shop__content-wrapper--list">
+          <div class="shop__content-wrapper">
             <div class="shop-content">
               <div class="shop-item ">
                 <div class="shop-item__box-img">
